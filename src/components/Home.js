@@ -27,7 +27,7 @@ const Home = () => {
         console.log(error);
       }
     );
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <Main>
