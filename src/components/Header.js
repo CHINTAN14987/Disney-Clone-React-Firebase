@@ -36,7 +36,7 @@ const Header = () => {
         navigate("/");
       }
     });
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
   const handleAuth = () => {
     auth.signInWithPopup(provider).then((result) => {
       console.log(result);
