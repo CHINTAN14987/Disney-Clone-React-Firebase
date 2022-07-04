@@ -66,30 +66,30 @@ const Header = () => {
       ) : (
         <>
           <NavMenu>
-            <a>
+            <button>
               <img src={homeIcon} alt="" />
               <span>Home</span>
-            </a>
-            <a>
+            </button>
+            <button>
               <img src={searchIcon} alt="" />
               <span>Search</span>
-            </a>
-            <a>
+            </button>
+            <button>
               <img src={watchIcon} alt="" />
               <span>WATCHLIST</span>
-            </a>
-            <a>
+            </button>
+            <button>
               <img src={originalIcon} alt="" />
               <span>Originals</span>
-            </a>
-            <a>
+            </button>
+            <button>
               <img src={movieIcon} alt="" />
               <span>Movies</span>
-            </a>
-            <a>
+            </button>
+            <button>
               <img src={seriesIcon} alt="" />
               <span>Series</span>
-            </a>
+            </button>
           </NavMenu>
           {console.log(userPhoto)}
           <UserImg src={userPhoto} onClick={signOut} />
@@ -120,11 +120,14 @@ const NavMenu = styled.div`
   width: 100%;
   margin-left: 25px;
   align-items: center;
-  a {
+  button {
     cursor: pointer;
     display: flex;
     align-items: center;
     padding: 0 12px;
+    background-color: #090b13;
+    color: white;
+    border: none;
     img {
       height: 20px;
     }
